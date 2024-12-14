@@ -1,0 +1,75 @@
+  .logo{
+    padding: 10px;
+    height: 5%;
+    width: 8%;
+  }
+  .homeButton {
+    border-radius: 5px;
+    }
+  .backButton{
+    color: black;
+    font-size: 18px;
+  }
+  .greenBorder {
+    border-radius: 25px;
+    border: 2px solid green;
+   
+    width: 200px;
+    height: 150px;
+  }
+
+   .redBorder {
+    border-radius: 25px;
+    border: 2px solid red;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+  }
+
+  .blueBorder {
+    border-radius: 25px;
+    border: 2px solid blue;
+    padding: 20px; 
+  }
+  
+ 
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 12px;
+    margin-top: 200px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 100px;
+    border: 2px solid black;
+}
+
+.search button {
+    padding: 6px 10px;
+    background: white;
+    color: rgb(25, 97, 180);
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 200px;
+}
+
+.search button i {
+    font-size: 18px;
+}
+.sampleText{
+  text-align: center; 
+  padding-top: 10px;
+  font-size: 20px; 
+  font-style: italic;
+}
+
+.barText{
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 12px;
+  margin-right: 10px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokePedia</title>
+    <link rel="stylesheet" href="../static/css/mystyle.css">
+    <!-- Import w3 schools css for bar graphs-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Import bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../static/scripts/scripts.js" defer></script>
+</head>
+<body>
+<header>
+   <section class="topBar">
+        <img src="../static/img/PokemonLogo.png" alt="PokemonLogo" class="logo">
+        <h2 style="text-align: center;">PokéPedia</h2>
+        <h4 style="text-align: center;">You searched for: {{ pokemonName }}</h4>
+   </section>
+</header>
+<main>
+
+<section style="padding-left: 20px; padding-bottom: 5px;" >
+    <button class="homeButton"><a href="../main.html" class="backButton">Search Again</a></button>
+</section>
+
+<section class="container">
+    <section class="row" style="display: flex; gap: 20px;">
+
+        <div class="col-sm-2 greenBorder">
+            <!-- Img src will be adjusted by the javascript to fill the correct front default sprite -->
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png" alt="pokemon image" style="height: 160px;width: 160px;">
+        </div>
+        
+        <div class="col-sm-6 blueBorder">
+            <!-- Display the 6 bars that represent the stats of the pokemon-->
+            <!-- HP bar -->
+            <div style="display: flex; align-items: center;">
+                <!-- Bar graph code found on W3 school and some css borrowed as well-->
+                <p class="barText">Hp:</p>
+                <div class="w3-light-grey w3-round" style="width: 300px;">
+                    <div class="w3-container w3-green w3-round" data-stat="hp" style="width: 0%;">0</div>
+                </div>
+                <p style="margin-left: 10px;" class="barText">255</p>
+            </div>
+            <br>
+
+            <!-- ATK bar -->
+            <div style="display: flex; align-items: center;">
+                <!-- Bar graph code found on W3 school and some css borrowed as well-->
+                <p class="barText">Atk:</p>
+                <div class="w3-light-grey w3-round" style="width: 300px;">
+                    <div class="w3-container w3-blue w3-round" data-stat="attack" style="width: 0%;">0</div>
+                </div>
+                <p style="margin-left: 10px;" class="barText">255</p>
+            </div>
+            <br>
+
+            <!-- DEF bar -->
+            <div style="display: flex; align-items: center;">
+                <!-- Bar graph code found on W3 school and some css borrowed as well-->
+                <p class="barText">Def:</p>
+                <div class="w3-light-grey w3-round" style="width: 300px;">
+                    <div class="w3-container w3-orange w3-round" data-stat="defense" style="width: 0%;">0</div>
+                </div>
+                <p style="margin-left: 10px;" class="barText">255</p>
+            </div>
+            <br>
+
+            <!-- SP.ATK bar -->
+            <div style="display: flex; align-items: center;">
+                <!-- Bar graph code found on W3 school and some css borrowed as well-->
+                <p class="barText">Sp.Atk:</p>
+                <div class="w3-light-grey w3-round" style="width: 300px;">
+                    <div class="w3-container w3-pink w3-round" data-stat="special-attack" style="width: 0%;">0</div>
+                </div>
+                <p style="margin-left: 10px;" class="barText">255</p>
+            </div>
+            <br>
+
+            <!-- SP.DEF bar -->
+            <div style="display: flex; align-items: center;">
+                <!-- Bar graph code found on W3 school and some css borrowed as well-->
+                <p class="barText">Sp.Def:</p>
+                <div class="w3-light-grey w3-round" style="width: 300px;">
+                    <div class="w3-container w3-purple w3-round" data-stat="special-defense" style="width: 0%;">0</div>
+                </div>
+                <p style="margin-left: 10px;" class="barText">255</p>
+            </div>
+            <br>
+
+            <!-- SPEED bar -->
+            <div style="display: flex; align-items: center;">
+                <!-- Bar graph code found on W3 school and some css borrowed as well-->
+                <p class="barText">Speed:</p>
+                <div class="w3-light-grey w3-round" style="width: 300px;">
+                    <div class="w3-container w3-yellow w3-round" data-stat="speed" style="width: 0%;">0</div>
+                </div>
+                <p style="margin-left: 10px;" class="barText">255</p>
+            </div>
+            
+        </div>    
+
+        <div class="col-sm-3 redBorder">
+            <h3>Abilities: </h3>
+            <!-- <p class="barText">multitype</p> -->
+        </div>    
+    </section>
+</section>
+
+</main>
+</body>
+</html>
